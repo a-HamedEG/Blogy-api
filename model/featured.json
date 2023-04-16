@@ -1,0 +1,90 @@
+{
+    "featured": [
+        {
+            "id": 1,
+            "blogTitle": "Fundamental of javascript",
+            "imgName": "Article_Image.png"
+        },
+        {
+            "id": 2,
+            "blogTitle": "Grid CSS make your life easier",
+            "imgName": "Article_Image-1.png"
+        },
+        {
+            "id": 3,
+            "blogTitle": "Make animated light mode and dark mode toggle with CSS",
+            "imgName": "Article_Image-2.png"
+        },
+        {
+            "id": 4,
+            "blogTitle": "Make tic tac toe games with react JS",
+            "imgName": "Article_Image-3.png"
+        }
+    ],
+    "css": [
+        {
+            "id": 1,
+            "blogTitle": "Fundamental of javascript",
+            "imgName": "Article_Image-6.png"
+        },
+        {
+            "id": 2,
+            "blogTitle": "Grid CSS make your life easier",
+            "imgName": "Article_Image-8.png"
+        },
+        {
+            "id": 3,
+            "blogTitle": "Make animated light mode and dark mode toggle with CSS",
+            "imgName": "Article_Image-5.png"
+        },
+        {
+            "id": 4,
+            "blogTitle": "Make tic tac toe games with react JS",
+            "imgName": "Article_Image-11.png"
+        }
+    ],
+    "js": [
+        {
+            "id": 1,
+            "blogTitle": "Fundamental of javascript",
+            "imgName": "Article_Image-10.png"
+        },
+        {
+            "id": 2,
+            "blogTitle": "Grid CSS make your life easier",
+            "imgName": "Article_Image-7.png"
+        },
+        {
+            "id": 3,
+            "blogTitle": "Make animated light mode and dark mode toggle with CSS",
+            "imgName": "Article_Image-9.png"
+        },
+        {
+            "id": 4,
+            "blogTitle": "Make tic tac toe games with react JS",
+            "imgName": "Article_Image-5.png"
+        }
+    ],
+    "react": [
+        {
+            "id": 1,
+            "blogTitle": "Fundamental of javascript",
+            "imgName": "Article_Image.png"
+        },
+        {
+            "id": 2,
+            "blogTitle": "Grid CSS make your life easier",
+            "imgName": "Article_Image-3.png"
+        },
+        {
+            "id": 3,
+            "blogTitle": "Make animated light mode and dark mode toggle with CSS",
+            "imgName": "Article_Image-7.png"
+        },
+        {
+            "id": 4,
+            "blogTitle": "Make tic tac toe games with react JS",
+            "imgName": "Article_Image-8.png"
+        }
+    ]
+}
