@@ -1,13 +1,13 @@
 const Post = require("../model/Post");
 
 const showAllPosts = async (req, res) => {
-  const employees = await Post.find();
-  if (!employees) return res.status(204).json({ message: "No posts found." });
-  res.json(employees);
+  const post = await Post.find();
+  if (!post) return res.status(204).json({ message: "No posts found." });
+  res.json(post);
 };
 
 const createNewPost = async (req, res) => {
-  if (!req?.body?.title || !req?.body?.content || !req?.body?.category) {
+  if (!req?.body?.title || !req?.body?.content || !req?.body?.category || !req?.body?.imgUrl) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
@@ -16,6 +16,7 @@ const createNewPost = async (req, res) => {
       title: req.body.title,
       content: req.body.content,
       category: req.body.category,
+      imgUrl: req.body.imgUrl,
     });
 
     res.status(201).json(result);
@@ -53,10 +54,12 @@ const updatePost = async (req, res) => {
   if (req.body?.title) post.title = req.body.title;
   if (req.body?.content) post.content = req.body.content;
   if (req.body?.category) post.category = req.body.category;
+  if (req.body?.imgUrl) post.imgUrl = req.body.imgUrl;
   const result = await post.save();
   res.json(result);
 };
 const getPost = async (req, res) => {
+    console.log(req)
     if (!req?.params?.id) return res.status(400).json({ 'message': 'Post ID required.' });
 
     const post = await Post.findOne({ _id: req.params.id }).exec();
