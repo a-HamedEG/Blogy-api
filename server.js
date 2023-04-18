@@ -22,7 +22,7 @@ app.use((req, res, nxt) => {
   nxt();
 });
 
-app.use(credentials);
+// app.use(credentials);
 
 app.use(cors());
 
