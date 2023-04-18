@@ -7,6 +7,7 @@ const connectDB = require("./config/dbConn");
 
 const cookieParser = require("cookie-parser");
 
+const errorHandler = require("./middleware/errorHandler");
 const credentials = require("./middleware/credentials");
 const cors = require("cors");
 const corsOptions = require("./config/corsOption");
@@ -42,6 +43,8 @@ app.use("/post", require("./routes/post"));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "model", "featured.json"));
 });
+
+app.use(errorHandler);
 
 mongoose.connection.once("open", () => {
   console.log("connected to mongoDB");
